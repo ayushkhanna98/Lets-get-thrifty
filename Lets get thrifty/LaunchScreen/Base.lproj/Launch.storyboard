@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash ScreenVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="Launch" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="SplashScreenVC" customModule="Lets_get_thrifty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wlm-A1-lsY">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get thrifty!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tii-gB-qIX">
+                                        <rect key="frame" x="20" y="385" width="374" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="yJw-mU-FrF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="39"/>
+                                        <color key="textColor" red="0.63137254901960782" green="0.19215686274509802" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="0.99999600649999998" green="1" blue="1" alpha="0.44933857696735313" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="0.54667269473044289" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <size key="shadowOffset" width="4" height="-1"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tshirt" translatesAutoresizingMaskIntoConstraints="NO" id="RHq-HC-eyn">
+                                        <rect key="frame" x="0.0" y="195.5" width="414" height="165.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="RHq-HC-eyn" secondAttribute="height" multiplier="5:2" id="Kfs-QI-1Bm"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Tii-gB-qIX" firstAttribute="leading" secondItem="Wlm-A1-lsY" secondAttribute="leading" constant="20" id="2TZ-6q-j6d"/>
+                                    <constraint firstItem="Tii-gB-qIX" firstAttribute="centerY" secondItem="Wlm-A1-lsY" secondAttribute="centerY" priority="750" id="Cmn-LW-TaZ"/>
+                                    <constraint firstItem="RHq-HC-eyn" firstAttribute="leading" secondItem="Wlm-A1-lsY" secondAttribute="leading" id="HLG-KS-3dt"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tii-gB-qIX" secondAttribute="trailing" constant="20" id="LzH-c2-AFf"/>
+                                    <constraint firstItem="Tii-gB-qIX" firstAttribute="top" secondItem="RHq-HC-eyn" secondAttribute="bottom" priority="750" constant="24" id="dxh-um-Ryx"/>
+                                    <constraint firstAttribute="trailing" secondItem="RHq-HC-eyn" secondAttribute="trailing" id="j5u-Su-zZg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.89411764705882346" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wlm-A1-lsY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="JDQ-W7-27w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wlm-A1-lsY" secondAttribute="bottom" id="YD8-LD-nFC"/>
+                            <constraint firstAttribute="trailing" secondItem="Wlm-A1-lsY" secondAttribute="trailing" id="jsd-Ht-yuv"/>
+                            <constraint firstItem="Wlm-A1-lsY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="niW-4m-uRq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labeRightAnchor" destination="LzH-c2-AFf" id="zyh-57-lgb"/>
+                        <outlet property="label" destination="Tii-gB-qIX" id="dhs-iu-DVh"/>
+                        <outlet property="labelLeftAnchor" destination="2TZ-6q-j6d" id="kxi-cu-oal"/>
+                        <outlet property="tshirtImage" destination="RHq-HC-eyn" id="ZcM-s3-NlW"/>
+                        <outlet property="tshirtLeftAnchor" destination="HLG-KS-3dt" id="4tE-h9-aGD"/>
+                        <outlet property="tshirtRightAnchor" destination="j5u-Su-zZg" id="muZ-bx-ZlG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-35" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tshirt" width="512" height="512"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_Lets_get_thrifty_Lets_get_thriftyUITests {
+  umbrella header "Pods-Lets get thrifty-Lets get thriftyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

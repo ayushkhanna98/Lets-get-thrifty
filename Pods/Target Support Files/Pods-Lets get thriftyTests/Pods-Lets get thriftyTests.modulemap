@@ -1,0 +1,6 @@
+framework module Pods_Lets_get_thriftyTests {
+  umbrella header "Pods-Lets get thriftyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
