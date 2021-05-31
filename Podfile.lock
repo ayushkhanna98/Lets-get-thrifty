@@ -83,6 +83,7 @@ PODS:
     - nanopb/encode (= 2.30907.0)
   - nanopb/decode (2.30907.0)
   - nanopb/encode (2.30907.0)
+  - pop (1.0.12)
   - PromisesObjC (1.2.12)
   - ReachabilitySwift (4.3.1)
   - RxCocoa (6.1.0):
@@ -100,6 +101,7 @@ DEPENDENCIES:
   - GoogleSignIn
   - IQKeyboardManagerSwift
   - lottie-ios
+  - pop
   - ReachabilitySwift (= 4.3.1)
   - RxCocoa
   - RxSwift
@@ -124,6 +126,7 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
     - lottie-ios
     - nanopb
+    - pop
     - PromisesObjC
     - ReachabilitySwift
     - RxCocoa
@@ -149,6 +152,7 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
   nanopb: 59221d7f958fb711001e6a449489542d92ae113e
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
   ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
   RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
@@ -156,6 +160,6 @@ SPEC CHECKSUMS:
   RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
   SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
 
-PODFILE CHECKSUM: 467b6915eaa6aa7d9e7e045eb33038782974f240
+PODFILE CHECKSUM: f8b5a3a70ed952b1fb870d0a5141ea7b23de1632
 
 COCOAPODS: 1.10.1

@@ -31,6 +31,7 @@ class BaseViewController <GenericViewModel: BaseViewModel>: UIViewController {
         self._setupViewModelIfCan()
         self._setupViewModelObserving()
         self.viewModel?.loaded()
+        self.addLoaderIfCan()
     }
     
     private func _setupViewModelIfCan() {
@@ -57,10 +58,16 @@ class BaseViewController <GenericViewModel: BaseViewModel>: UIViewController {
         if canShowLoader && show {
             self.addLoaderIfCan()
         }
-        //UIView.animate(withDuration: 1) {
+        if show {
             self.loader?.isHidden = !show
-         //   self.view.layoutIfNeeded()
-        //}
+        }
+        UIView.animate(withDuration: 0.2, animations: {
+            self.loader?.alpha = show ?  1 : 0
+            self.view.layoutIfNeeded()
+        }, completion: { (_) in
+            self.loader?.is_Hidden = !show
+            self.loader?.isHidden = !show
+        })
        
         
     }
@@ -92,6 +99,8 @@ class BaseViewController <GenericViewModel: BaseViewModel>: UIViewController {
              loader.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: loaderInsets.bottom)])
         self.loader = loader
         self.view.updateConstraintsIfNeeded()
+        self.loader?.isHidden = true
+        self.loader?.alpha = 0
     }
 
 }

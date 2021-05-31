@@ -20,6 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().clientID = "970363414656-2sjjoc7d524t56g8unc4ovmbaulbi19d.apps.googleusercontent.com"
         GIDSignIn.sharedInstance().delegate = self
         
+        
+        
         return true
     }
 

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fGG-j2-Unw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Card Swiping View Controller-->
+        <scene sceneID="BDt-2D-9ea">
+            <objects>
+                <viewController id="JwY-kQ-Ylu" customClass="CardSwipingViewController" customModule="Lets_get_thrifty" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OSh-1I-8LY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MrG-nx-ucx" customClass="SwipeableCardViewContainer" customModule="Lets_get_thrifty" customModuleProvider="target">
+                                <rect key="frame" x="20" y="164" width="374" height="549"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jjV-9L-fxG"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jjV-9L-fxG" firstAttribute="bottom" secondItem="MrG-nx-ucx" secondAttribute="bottom" constant="100" id="5cD-fI-4Tl"/>
+                            <constraint firstItem="MrG-nx-ucx" firstAttribute="top" secondItem="jjV-9L-fxG" secondAttribute="top" constant="120" id="MGq-ch-uZE"/>
+                            <constraint firstItem="MrG-nx-ucx" firstAttribute="leading" secondItem="jjV-9L-fxG" secondAttribute="leading" constant="20" id="c9S-IF-ebA"/>
+                            <constraint firstItem="jjV-9L-fxG" firstAttribute="trailing" secondItem="MrG-nx-ucx" secondAttribute="trailing" constant="20" id="pBq-Nu-PGA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="fQu-ax-wRy"/>
+                    <connections>
+                        <outlet property="_swipableCardView" destination="MrG-nx-ucx" id="is3-f4-xn5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chi-eC-IVb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1305.7971014492755" y="68.973214285714278"/>
+        </scene>
+        <!--Swipe-->
+        <scene sceneID="mbN-DC-eFp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="fGG-j2-Unw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Swipe" image="swipeIcon" largeContentSizeImage="google.png" selectedImage="swipeIcon" id="9QS-C5-Q6e">
+                        <inset key="largeContentSizeImageInsets" minX="0.0" minY="1" maxX="0.0" maxY="1"/>
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-8"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="H18-aq-rkP">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JwY-kQ-Ylu" kind="relationship" relationship="rootViewController" id="u09-PM-tgr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gxj-IT-iQC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="395.6521739130435" y="68.973214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="google.png" width="18" height="18"/>
+        <image name="swipeIcon" width="28" height="28"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -39,22 +39,26 @@ class Loader: UIView {
        
     }
     
-    var ihidden: Bool = true {
+    var is_Hidden: Bool = true {
         didSet {
-            if !isHidden {
-                    _performAnimate()
-            }
-        }
-    }
-    override func didMoveToWindow() {
-        super.didMoveToWindow()
-        if !self.isHidden {
-            _performAnimate()
+            _performAnimate(stop: is_Hidden)
         }
     }
     
-    private func _performAnimate() {
-        self._animationView?.play(fromProgress: 0.0, toProgress: 1.0, loopMode: .loop, completion: nil)
+    //commented for testing
+    //    override func didMoveToWindow() {
+//        super.didMoveToWindow()
+//        if !self.isHidden {
+//            _performAnimate()
+//        }
+//    }
+    
+    private func _performAnimate(stop: Bool) {
+        if stop {
+            _animationView?.stop()
+            return
+        }
+         self._animationView?.play(fromProgress: 0.0, toProgress: 1.0, loopMode: .loop, completion: nil)
         
     }
 }

@@ -17,6 +17,7 @@ pod 'CountryPickerView'
 pod 'RxSwift'
 pod 'RxCocoa'
 pod 'ReachabilitySwift', '4.3.1'
+pod 'pop'
 
   target 'Lets get thriftyTests' do
     inherit! :search_paths

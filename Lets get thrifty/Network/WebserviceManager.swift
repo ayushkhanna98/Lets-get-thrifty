@@ -43,7 +43,7 @@ class WebServiceManager: WebServiceManagerInterface {
         
         urlRequest.allHTTPHeaderFields = block.request.headers
         
-        if let token = UserManager.shared.loginToken, urlRequest.allHTTPHeaderFields?["Authorization"] == nil {
+        if let token = UserManager.shared.loginToken?.token, urlRequest.allHTTPHeaderFields?["Authorization"] == nil {
             urlRequest.addValue("Bearer " + token, forHTTPHeaderField: "Authorization")
         }
         return urlRequest
@@ -91,6 +91,7 @@ class WebServiceManager: WebServiceManagerInterface {
         
         if _handleError(error: error, block: block, response: response) {
             // error occured so return
+         //  let responseError = ResponseError(statusCode: error?.statusCode, name: "Cannot get Data", message: "No data in response")
             return
         }
         

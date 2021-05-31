@@ -26,6 +26,7 @@ class LoginSignupViewController: BaseViewController<LoginSignupViewModel> {
     @IBOutlet weak var _passwordTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var _confirmPasswordTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var _selectCountryButton: UIButton!
+    @IBOutlet weak var _loginLabel: UILabel!
     
     let countryPicker = CountryPickerView()
     
@@ -36,9 +37,27 @@ class LoginSignupViewController: BaseViewController<LoginSignupViewModel> {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        _setupViews()
+        _bindViewModel()
+        
         countryPicker.delegate = self
         countryPicker.dataSource = self
         
+        GIDSignIn.sharedInstance().presentingViewController = self
+        
+    }
+    
+    private func _bindViewModel() {
+        viewModel.didLoginSuccessfully.bind { (val) in
+            RootControllerManager.shared.setRootViewController()
+        }
+        
+        viewModel.didSignUpSuccessfully.bind { (val) in
+            
+        }
+    }
+    
+    private func _setupViews() {
         _loginSignupButton.layer.cornerRadius = 20
         _continueButton.layer.cornerRadius = 20
         _loginSignupButton.layer.borderWidth = 0.75
@@ -56,28 +75,26 @@ class LoginSignupViewController: BaseViewController<LoginSignupViewModel> {
             view.layer.borderWidth = 0.75
             view.layer.borderColor = UIColor.black.cgColor
         }
-        GIDSignIn.sharedInstance().presentingViewController = self
-//        _googleSignInButton.layer.cornerRadius = 15
-        //_googleSignInButton.layer.borderWidth = 0.75
-        //_googleSignInButton.backgroundColor = .white
-//        _googleSignInButton.backgroundColor = .black
-        
     }
+    
     @IBAction func loginSignupButtonTapped(_ sender: Any) {
         _currentUIState = _currentUIState == UIState.Login ? UIState.Signup : UIState.Login
         _showLoginSignUp(state: _currentUIState)
     }
     
     @IBAction func _continueTapped(_ sender: UIButton) {
+        guard let email = _emailTextField.text, let password = _passwordTextField.text else {
+            print("Error: Cannot get text")
+            return
+        }
+        if !_validateTextFields() {
+            // Validation error
+            return
+        }
         if _currentUIState == .Login {
-            
-            self.viewModel.isLoading.accept(true)
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-                self.viewModel.isLoading.accept(false)
-            }
-            
-        } else if _currentUIState == .Signup {
-            showAlertError(title: "Error", errorMessage: "user already exists")
+            viewModel.login(email: email, password: password)
+        } else {
+           
             
             
         }
@@ -86,41 +103,42 @@ class LoginSignupViewController: BaseViewController<LoginSignupViewModel> {
         self.countryPicker.showCountriesList(from: self)
     }
     
-    private func _validateTextField() -> Bool {
+    private func _validateTextFields() -> Bool {
         
-        guard let email = _emailTextField.text, let username = _phoneNumberTextField.text, let name = _nameTextField.text, let password = _passwordTextField.text, let confirmPass = _confirmPasswordTextField.text  else {
-            //
+        guard let email = _emailTextField.text, let phone = _phoneNumberTextField.text, let name = _nameTextField.text, let password = _passwordTextField.text, let confirmPass = _confirmPasswordTextField.text  else {
+            print("Error: Cannot get text")
             return false
         }
-        if name.count == 0 {
-            _nameTextField.errorMessage = "Please enter a name"
+        if let error = viewModel.validateName(name: name), _currentUIState == .Signup {
+            _nameTextField.errorMessage = error
             return false
         } else {
             _nameTextField.errorMessage = nil
         }
-        if !(email.contains("@") && email.contains(".")) {
-            _emailTextField.errorMessage = "Enter valid email"
+        if let error = viewModel.validateEmail(email: email) {
+            _emailTextField.errorMessage = error
             return false
         } else {
             _emailTextField.errorMessage = nil
         }
-        if username.count < 6 {
-            _phoneNumberTextField.errorMessage = "Enter a valid phone number"
+        if let error = viewModel.validatePhone(phone: phone), _currentUIState == .Signup {
+            _phoneNumberTextField.errorMessage = error
             return false
         } else {
             _phoneNumberTextField.errorMessage = nil
         }
-        if password.count > 6 {
+        
+        if let error = viewModel.validatePassword(password: password), _currentUIState == .Signup {
+            _passwordTextField.errorMessage = error
+            return false
+        } else {
             _passwordTextField.errorMessage = nil
-            if password != confirmPass {
+            if password != confirmPass && _currentUIState == .Signup{
                 _confirmPasswordTextField.errorMessage = "Passwords dont match"
                 return false
             } else {
                 _confirmPasswordTextField.errorMessage = nil
             }
-        } else {
-            _passwordTextField.errorMessage = "Enter a longer password"
-            return false
         }
         
         return true
@@ -136,11 +154,11 @@ class LoginSignupViewController: BaseViewController<LoginSignupViewModel> {
                     view.alpha = state == UIState.Login ? 0 : 1
                 }
             }
+            self._loginLabel.text = state == UIState.Login ? "Login" : "Register new account"
             self._continueButton.setTitle(state == UIState.Login ? "Log in" : "Sign up", for: .normal)
-            self._loginSignupButton.setTitle(state == UIState.Login ? "Already registered? Log in" : "Not registered yet? Sign up", for: .normal)
+            self._loginSignupButton.setTitle(state == UIState.Login ? "Not registered yet? Sign up" : "Already registered? Log in", for: .normal)
         }, completion: nil)
     }
-    
 
 }
 

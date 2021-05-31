@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		21DCBDC0E0F888E7B8326596 /* Pods_Lets_get_thriftyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA5A0807DC8408E095D801E /* Pods_Lets_get_thriftyTests.framework */; };
+		241488C726519EA60028A685 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241488C626519EA50028A685 /* APIClient.swift */; };
+		241488D42651BED70028A685 /* AuthReporitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241488D32651BED60028A685 /* AuthReporitory.swift */; };
+		241488DC2651C6AF0028A685 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241488DB2651C6AF0028A685 /* UserModel.swift */; };
 		2426C661264E7368001F1883 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426C660264E7368001F1883 /* BaseViewController.swift */; };
 		2426C669264E7391001F1883 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426C668264E7391001F1883 /* BaseViewModel.swift */; };
 		2437F2B4263483E000F53F86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2437F2B3263483E000F53F86 /* AppDelegate.swift */; };
@@ -22,8 +25,40 @@
 		2437F32D2634B98200F53F86 /* online_shopping_delivery_lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 2437F32C2634B98200F53F86 /* online_shopping_delivery_lottie.json */; };
 		2437F33B263596E300F53F86 /* LoginOrSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2437F33A263596E300F53F86 /* LoginOrSignUp.storyboard */; };
 		2437F3432635B69B00F53F86 /* sneaker-outlined.json in Resources */ = {isa = PBXBuildFile; fileRef = 2437F3422635B69A00F53F86 /* sneaker-outlined.json */; };
+		244BC4E72657F76A00D70129 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 244BC4E62657F76A00D70129 /* CardView.xib */; };
+		244BC4EC2657F87400D70129 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BC4EB2657F87400D70129 /* CardView.swift */; };
+		244BC4F126581ED100D70129 /* SwipableCardHelperClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BC4F026581ED100D70129 /* SwipableCardHelperClasses.swift */; };
+		244BC4F9265836CB00D70129 /* SwipeableCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BC4F8265836CB00D70129 /* SwipeableCellModel.swift */; };
+		244BC4FE26583B8000D70129 /* SwipeableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BC4FD26583B8000D70129 /* SwipeableView.swift */; };
+		244BC50426583BA000D70129 /* SwipeableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BC50226583BA000D70129 /* SwipeableCardView.swift */; };
+		244BC50526583BA000D70129 /* SwipeableCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 244BC50326583BA000D70129 /* SwipeableCardView.xib */; };
+		244BC50A26583BF800D70129 /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BC50926583BF800D70129 /* NibView.swift */; };
+		244BC5392659385000D70129 /* CardSwipingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BC5382659385000D70129 /* CardSwipingViewController.swift */; };
+		244BC53E265938D700D70129 /* CardSwipingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BC53D265938D700D70129 /* CardSwipingViewModel.swift */; };
+		244BC5492659414F00D70129 /* SwipeableCardViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BC5482659414F00D70129 /* SwipeableCardViewContainer.swift */; };
+		246510362657B70D00D060FA /* CustomTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246510352657B70D00D060FA /* CustomTabBarControllerViewController.swift */; };
+		24666D542665637600125230 /* AddYourAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24666D532665637600125230 /* AddYourAddressViewController.swift */; };
+		248C0FCD265EDC34002349AA /* BottomSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248C0FCC265EDC34002349AA /* BottomSheetController.swift */; };
+		248C0FCF265EE705002349AA /* UploadImageBottomSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248C0FCE265EE705002349AA /* UploadImageBottomSheetController.swift */; };
 		2493261E2640649A007FB424 /* LoginSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2493261D2640649A007FB424 /* LoginSignupViewController.swift */; };
 		249326712641E66B007FB424 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 249326702641E66B007FB424 /* GoogleService-Info.plist */; };
+		24A81380265C20790061CCFA /* SellYourListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A8137F265C20790061CCFA /* SellYourListingViewController.swift */; };
+		24A81388265C251A0061CCFA /* SellYourListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A81387265C251A0061CCFA /* SellYourListingViewModel.swift */; };
+		24A8138D265C266E0061CCFA /* SellYourListingTableViewHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A8138C265C266E0061CCFA /* SellYourListingTableViewHeader.xib */; };
+		24A81392265C26C60061CCFA /* SellYourListingTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A81391265C26C60061CCFA /* SellYourListingTableViewHeader.swift */; };
+		24A81398265C46B00061CCFA /* YourListingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A81396265C46AF0061CCFA /* YourListingsTableViewCell.swift */; };
+		24A81399265C46B00061CCFA /* YourListingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A81397265C46B00061CCFA /* YourListingsTableViewCell.xib */; };
+		24A8139E265C5FA10061CCFA /* AddListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A8139D265C5FA10061CCFA /* AddListingViewController.swift */; };
+		24A813A3265C5FC90061CCFA /* AddListingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24A813A2265C5FC90061CCFA /* AddListingViewModel.swift */; };
+		24C0D5302652E964008E398A /* LoginToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C0D52F2652E964008E398A /* LoginToken.swift */; };
+		24C0D5352652EF3D008E398A /* SwiftExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C0D5342652EF3D008E398A /* SwiftExtensions.swift */; };
+		24C0D53D26543222008E398A /* RootControllerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C0D53C26543222008E398A /* RootControllerManager.swift */; };
+		24C0D54226543B1B008E398A /* TabBarStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C0D54126543B1A008E398A /* TabBarStoryboard.storyboard */; };
+		24C0D54726543E08008E398A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C0D54626543E08008E398A /* Home.storyboard */; };
+		24C0D54C26543E1C008E398A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C0D54B26543E1C008E398A /* Settings.storyboard */; };
+		24C0D55126543E2E008E398A /* Sell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C0D55026543E2E008E398A /* Sell.storyboard */; };
+		24C0D55626543E7F008E398A /* WishList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C0D55526543E7F008E398A /* WishList.storyboard */; };
+		24C0D55B26543EC1008E398A /* Swipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C0D55A26543EC1008E398A /* Swipe.storyboard */; };
 		24FD6D5A264ECADD000FD454 /* WebserviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6D59264ECADD000FD454 /* WebserviceManager.swift */; };
 		24FD6D5F264ED5CE000FD454 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6D5E264ED5CE000FD454 /* Constants.swift */; };
 		24FD6D65264ED7C5000FD454 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6D64264ED7C5000FD454 /* UserManager.swift */; };
@@ -60,6 +95,9 @@
 		0C5FE092A1B26EB90DE5DEB8 /* Pods_Lets_get_thrifty_Lets_get_thriftyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lets_get_thrifty_Lets_get_thriftyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DD7AF506C5601B9A255B234 /* Pods-Lets get thriftyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lets get thriftyTests.debug.xcconfig"; path = "Target Support Files/Pods-Lets get thriftyTests/Pods-Lets get thriftyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1A820E864BA4B0BEF7E921EE /* Pods_Lets_get_thrifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lets_get_thrifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		241488C626519EA50028A685 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		241488D32651BED60028A685 /* AuthReporitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthReporitory.swift; sourceTree = "<group>"; };
+		241488DB2651C6AF0028A685 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		2426C660264E7368001F1883 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2426C668264E7391001F1883 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		2437F2B0263483E000F53F86 /* Lets get thrifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lets get thrifty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,8 +118,40 @@
 		2437F32C2634B98200F53F86 /* online_shopping_delivery_lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = online_shopping_delivery_lottie.json; sourceTree = "<group>"; };
 		2437F33A263596E300F53F86 /* LoginOrSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginOrSignUp.storyboard; sourceTree = "<group>"; };
 		2437F3422635B69A00F53F86 /* sneaker-outlined.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sneaker-outlined.json"; sourceTree = "<group>"; };
+		244BC4E62657F76A00D70129 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		244BC4EB2657F87400D70129 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		244BC4F026581ED100D70129 /* SwipableCardHelperClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipableCardHelperClasses.swift; sourceTree = "<group>"; };
+		244BC4F8265836CB00D70129 /* SwipeableCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableCellModel.swift; sourceTree = "<group>"; };
+		244BC4FD26583B8000D70129 /* SwipeableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableView.swift; sourceTree = "<group>"; };
+		244BC50226583BA000D70129 /* SwipeableCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableCardView.swift; sourceTree = "<group>"; };
+		244BC50326583BA000D70129 /* SwipeableCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwipeableCardView.xib; sourceTree = "<group>"; };
+		244BC50926583BF800D70129 /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		244BC5382659385000D70129 /* CardSwipingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwipingViewController.swift; sourceTree = "<group>"; };
+		244BC53D265938D700D70129 /* CardSwipingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwipingViewModel.swift; sourceTree = "<group>"; };
+		244BC5482659414F00D70129 /* SwipeableCardViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableCardViewContainer.swift; sourceTree = "<group>"; };
+		246510352657B70D00D060FA /* CustomTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarControllerViewController.swift; sourceTree = "<group>"; };
+		24666D532665637600125230 /* AddYourAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddYourAddressViewController.swift; sourceTree = "<group>"; };
+		248C0FCC265EDC34002349AA /* BottomSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetController.swift; sourceTree = "<group>"; };
+		248C0FCE265EE705002349AA /* UploadImageBottomSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageBottomSheetController.swift; sourceTree = "<group>"; };
 		2493261D2640649A007FB424 /* LoginSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupViewController.swift; sourceTree = "<group>"; };
 		249326702641E66B007FB424 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		24A8137F265C20790061CCFA /* SellYourListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellYourListingViewController.swift; sourceTree = "<group>"; };
+		24A81387265C251A0061CCFA /* SellYourListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellYourListingViewModel.swift; sourceTree = "<group>"; };
+		24A8138C265C266E0061CCFA /* SellYourListingTableViewHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SellYourListingTableViewHeader.xib; sourceTree = "<group>"; };
+		24A81391265C26C60061CCFA /* SellYourListingTableViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellYourListingTableViewHeader.swift; sourceTree = "<group>"; };
+		24A81396265C46AF0061CCFA /* YourListingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourListingsTableViewCell.swift; sourceTree = "<group>"; };
+		24A81397265C46B00061CCFA /* YourListingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YourListingsTableViewCell.xib; sourceTree = "<group>"; };
+		24A8139D265C5FA10061CCFA /* AddListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingViewController.swift; sourceTree = "<group>"; };
+		24A813A2265C5FC90061CCFA /* AddListingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingViewModel.swift; sourceTree = "<group>"; };
+		24C0D52F2652E964008E398A /* LoginToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginToken.swift; sourceTree = "<group>"; };
+		24C0D5342652EF3D008E398A /* SwiftExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftExtensions.swift; sourceTree = "<group>"; };
+		24C0D53C26543222008E398A /* RootControllerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootControllerManager.swift; sourceTree = "<group>"; };
+		24C0D54126543B1A008E398A /* TabBarStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBarStoryboard.storyboard; sourceTree = "<group>"; };
+		24C0D54626543E08008E398A /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		24C0D54B26543E1C008E398A /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		24C0D55026543E2E008E398A /* Sell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sell.storyboard; sourceTree = "<group>"; };
+		24C0D55526543E7F008E398A /* WishList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WishList.storyboard; sourceTree = "<group>"; };
+		24C0D55A26543EC1008E398A /* Swipe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Swipe.storyboard; sourceTree = "<group>"; };
 		24FD6D59264ECADD000FD454 /* WebserviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebserviceManager.swift; sourceTree = "<group>"; };
 		24FD6D5E264ED5CE000FD454 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		24FD6D64264ED7C5000FD454 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
@@ -129,6 +199,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		241488CB26519EBA0028A685 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				241488D22651BCA60028A685 /* Repositories */,
+				24FD6D59264ECADD000FD454 /* WebserviceManager.swift */,
+				241488C626519EA50028A685 /* APIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		241488D22651BCA60028A685 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				241488D32651BED60028A685 /* AuthReporitory.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		2426C650264E70A3001F1883 /* lottie_files */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +262,6 @@
 			isa = PBXGroup;
 			children = (
 				24FD6D8F264EF626000FD454 /* Views */,
-				2426C65F264E733B001F1883 /* Storyboards */,
 				2426C65D264E72ED001F1883 /* View Controllers */,
 				2426C65C264E72E2001F1883 /* View Models */,
 				2426C65B264E72D7001F1883 /* Models */,
@@ -185,6 +272,8 @@
 		2426C65B264E72D7001F1883 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				241488DB2651C6AF0028A685 /* UserModel.swift */,
+				24C0D52F2652E964008E398A /* LoginToken.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,8 +281,12 @@
 		2426C65C264E72E2001F1883 /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				244BC4F8265836CB00D70129 /* SwipeableCellModel.swift */,
 				2426C668264E7391001F1883 /* BaseViewModel.swift */,
 				24FD6DB4264F05A0000FD454 /* LoginSignupViewModel.swift */,
+				244BC53D265938D700D70129 /* CardSwipingViewModel.swift */,
+				24A81387265C251A0061CCFA /* SellYourListingViewModel.swift */,
+				24A813A2265C5FC90061CCFA /* AddListingViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -204,6 +297,13 @@
 				2493261D2640649A007FB424 /* LoginSignupViewController.swift */,
 				2426C660264E7368001F1883 /* BaseViewController.swift */,
 				24FD6DA5264EF9E9000FD454 /* AlertViewController.swift */,
+				246510352657B70D00D060FA /* CustomTabBarControllerViewController.swift */,
+				244BC5382659385000D70129 /* CardSwipingViewController.swift */,
+				24A8137F265C20790061CCFA /* SellYourListingViewController.swift */,
+				24A8139D265C5FA10061CCFA /* AddListingViewController.swift */,
+				248C0FCC265EDC34002349AA /* BottomSheetController.swift */,
+				248C0FCE265EE705002349AA /* UploadImageBottomSheetController.swift */,
+				24666D532665637600125230 /* AddYourAddressViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -222,6 +322,12 @@
 			children = (
 				2437F33A263596E300F53F86 /* LoginOrSignUp.storyboard */,
 				24FD6DA0264EF916000FD454 /* Others.storyboard */,
+				24C0D54126543B1A008E398A /* TabBarStoryboard.storyboard */,
+				24C0D54626543E08008E398A /* Home.storyboard */,
+				24C0D54B26543E1C008E398A /* Settings.storyboard */,
+				24C0D55026543E2E008E398A /* Sell.storyboard */,
+				24C0D55526543E7F008E398A /* WishList.storyboard */,
+				24C0D55A26543EC1008E398A /* Swipe.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -251,6 +357,7 @@
 		2437F2B2263483E000F53F86 /* Lets get thrifty */ = {
 			isa = PBXGroup;
 			children = (
+				241488CB26519EBA0028A685 /* Network */,
 				24FD6D58264ECA16000FD454 /* Helpers */,
 				2426C65E264E7315001F1883 /* Resourses */,
 				2426C65A264E72C7001F1883 /* MVVM */,
@@ -283,9 +390,10 @@
 			isa = PBXGroup;
 			children = (
 				24FD6D63264ED7B0000FD454 /* Singletons */,
-				24FD6D59264ECADD000FD454 /* WebserviceManager.swift */,
 				24FD6D5E264ED5CE000FD454 /* Constants.swift */,
 				24FD6D6C264EF500000FD454 /* Helper.swift */,
+				24C0D5342652EF3D008E398A /* SwiftExtensions.swift */,
+				244BC4F026581ED100D70129 /* SwipableCardHelperClasses.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -294,6 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				24FD6D64264ED7C5000FD454 /* UserManager.swift */,
+				24C0D53C26543222008E398A /* RootControllerManager.swift */,
 			);
 			path = Singletons;
 			sourceTree = "<group>";
@@ -301,7 +410,19 @@
 		24FD6D8F264EF626000FD454 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2426C65F264E733B001F1883 /* Storyboards */,
 				24FD6D90264EF633000FD454 /* Loader.swift */,
+				244BC4E62657F76A00D70129 /* CardView.xib */,
+				244BC4EB2657F87400D70129 /* CardView.swift */,
+				244BC5482659414F00D70129 /* SwipeableCardViewContainer.swift */,
+				244BC50926583BF800D70129 /* NibView.swift */,
+				244BC50226583BA000D70129 /* SwipeableCardView.swift */,
+				244BC50326583BA000D70129 /* SwipeableCardView.xib */,
+				244BC4FD26583B8000D70129 /* SwipeableView.swift */,
+				24A8138C265C266E0061CCFA /* SellYourListingTableViewHeader.xib */,
+				24A81391265C26C60061CCFA /* SellYourListingTableViewHeader.swift */,
+				24A81396265C46AF0061CCFA /* YourListingsTableViewCell.swift */,
+				24A81397265C46B00061CCFA /* YourListingsTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -444,11 +565,21 @@
 				2437F32D2634B98200F53F86 /* online_shopping_delivery_lottie.json in Resources */,
 				2437F2BD263483E500F53F86 /* Assets.xcassets in Resources */,
 				24FD6DAB264F01B0000FD454 /* warning.json in Resources */,
+				244BC50526583BA000D70129 /* SwipeableCardView.xib in Resources */,
 				249326712641E66B007FB424 /* GoogleService-Info.plist in Resources */,
+				244BC4E72657F76A00D70129 /* CardView.xib in Resources */,
+				24C0D55126543E2E008E398A /* Sell.storyboard in Resources */,
+				24A81399265C46B00061CCFA /* YourListingsTableViewCell.xib in Resources */,
 				2437F3432635B69B00F53F86 /* sneaker-outlined.json in Resources */,
+				24C0D54726543E08008E398A /* Home.storyboard in Resources */,
 				2437F2BB263483E000F53F86 /* Launch.storyboard in Resources */,
+				24C0D54C26543E1C008E398A /* Settings.storyboard in Resources */,
+				24C0D55B26543EC1008E398A /* Swipe.storyboard in Resources */,
 				2437F31F2634AEBF00F53F86 /* Rocket_Launch_Lottie.json in Resources */,
 				24FD6DA1264EF916000FD454 /* Others.storyboard in Resources */,
+				24C0D55626543E7F008E398A /* WishList.storyboard in Resources */,
+				24A8138D265C266E0061CCFA /* SellYourListingTableViewHeader.xib in Resources */,
+				24C0D54226543B1B008E398A /* TabBarStoryboard.storyboard in Resources */,
 				2437F33B263596E300F53F86 /* LoginOrSignUp.storyboard in Resources */,
 				24FD6D99264EF6C1000FD454 /* Loader.json in Resources */,
 			);
@@ -612,18 +743,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244BC5492659414F00D70129 /* SwipeableCardViewContainer.swift in Sources */,
 				24FD6D65264ED7C5000FD454 /* UserManager.swift in Sources */,
+				244BC4F9265836CB00D70129 /* SwipeableCellModel.swift in Sources */,
 				24FD6D5A264ECADD000FD454 /* WebserviceManager.swift in Sources */,
+				24A81392265C26C60061CCFA /* SellYourListingTableViewHeader.swift in Sources */,
+				24A8139E265C5FA10061CCFA /* AddListingViewController.swift in Sources */,
+				244BC5392659385000D70129 /* CardSwipingViewController.swift in Sources */,
+				248C0FCF265EE705002349AA /* UploadImageBottomSheetController.swift in Sources */,
 				2426C661264E7368001F1883 /* BaseViewController.swift in Sources */,
+				246510362657B70D00D060FA /* CustomTabBarControllerViewController.swift in Sources */,
+				24666D542665637600125230 /* AddYourAddressViewController.swift in Sources */,
 				2493261E2640649A007FB424 /* LoginSignupViewController.swift in Sources */,
+				24C0D5352652EF3D008E398A /* SwiftExtensions.swift in Sources */,
+				24C0D53D26543222008E398A /* RootControllerManager.swift in Sources */,
+				244BC4EC2657F87400D70129 /* CardView.swift in Sources */,
 				2437F2B8263483E000F53F86 /* SplashScreenVC.swift in Sources */,
+				244BC50A26583BF800D70129 /* NibView.swift in Sources */,
+				244BC53E265938D700D70129 /* CardSwipingViewModel.swift in Sources */,
 				2437F2B4263483E000F53F86 /* AppDelegate.swift in Sources */,
+				241488D42651BED70028A685 /* AuthReporitory.swift in Sources */,
 				24FD6DB5264F05A0000FD454 /* LoginSignupViewModel.swift in Sources */,
+				24A81398265C46B00061CCFA /* YourListingsTableViewCell.swift in Sources */,
+				244BC4FE26583B8000D70129 /* SwipeableView.swift in Sources */,
 				2437F2B6263483E000F53F86 /* SceneDelegate.swift in Sources */,
+				24A81388265C251A0061CCFA /* SellYourListingViewModel.swift in Sources */,
 				24FD6DA6264EF9E9000FD454 /* AlertViewController.swift in Sources */,
+				24A813A3265C5FC90061CCFA /* AddListingViewModel.swift in Sources */,
+				248C0FCD265EDC34002349AA /* BottomSheetController.swift in Sources */,
+				241488DC2651C6AF0028A685 /* UserModel.swift in Sources */,
 				24FD6D6D264EF500000FD454 /* Helper.swift in Sources */,
+				24C0D5302652E964008E398A /* LoginToken.swift in Sources */,
+				244BC4F126581ED100D70129 /* SwipableCardHelperClasses.swift in Sources */,
+				244BC50426583BA000D70129 /* SwipeableCardView.swift in Sources */,
 				24FD6D91264EF633000FD454 /* Loader.swift in Sources */,
+				24A81380265C20790061CCFA /* SellYourListingViewController.swift in Sources */,
 				2426C669264E7391001F1883 /* BaseViewModel.swift in Sources */,
+				241488C726519EA60028A685 /* APIClient.swift in Sources */,
 				24FD6D5F264ED5CE000FD454 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

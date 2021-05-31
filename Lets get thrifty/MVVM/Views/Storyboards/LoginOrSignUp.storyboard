@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9q-zv-4Jb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9q-zv-4Jb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0I-Iu-cGy">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="831"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="835"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Vector_line1" translatesAutoresizingMaskIntoConstraints="NO" id="uA9-0s-pv4">
                                                 <rect key="frame" x="0.0" y="30" width="414" height="225"/>
@@ -36,15 +36,23 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hi, whats up?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2f-Zv-az7">
-                                                <rect key="frame" x="0.0" y="130" width="414" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="140" width="414" height="43.5"/>
                                                 <fontDescription key="fontDescription" name="Arial-ItalicMT" family="Arial" pointSize="37"/>
                                                 <color key="textColor" red="0.63137254901960782" green="0.22623636246490786" blue="0.17075381177861768" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" red="0.99999600649999998" green="1" blue="1" alpha="0.83345708783888661" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <size key="shadowOffset" width="2" height="2"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jed-tK-16Y">
+                                                <rect key="frame" x="0.0" y="243.5" width="414" height="28"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="24"/>
+                                                <color key="textColor" red="0.63137254899999995" green="0.22623636250000001" blue="0.17075381179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <size key="shadowOffset" width="1" height="1"/>
+                                            </label>
                                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Al2-wS-p9n">
-                                                <rect key="frame" x="64.5" y="747" width="285" height="44"/>
+                                                <rect key="frame" x="64.5" y="771" width="285" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="vpj-qY-Adu"/>
@@ -62,7 +70,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwT-Zv-hbD">
-                                                <rect key="frame" x="147" y="593" width="120" height="44"/>
+                                                <rect key="frame" x="147" y="617" width="120" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="BRo-4Z-fRF"/>
@@ -80,7 +88,7 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GDe-ha-qee">
-                                                <rect key="frame" x="57" y="263" width="300" height="305"/>
+                                                <rect key="frame" x="57" y="287" width="300" height="305"/>
                                                 <subviews>
                                                     <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lBB-CT-0Dz">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="45"/>
@@ -91,7 +99,7 @@
                                                                 <color key="tintColor" red="0.63137254899999995" green="0.2274509804" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Arial-ItalicMT" family="Arial" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" textContentType="name"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                                                         <color key="value" red="0.63137254899999995" green="0.15686274510000001" blue="0.17075381179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -154,7 +162,7 @@
                                                                 <color key="tintColor" red="0.63137254899999995" green="0.2274509804" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Arial-ItalicMT" family="Arial" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" textContentType="email"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                                                         <color key="value" red="0.63137254899999995" green="0.15686274510000001" blue="0.17075381179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -217,7 +225,7 @@
                                                                 <color key="tintColor" red="0.63137254899999995" green="0.2274509804" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Arial-ItalicMT" family="Arial" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="next" textContentType="tel"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="phonePad" returnKeyType="next" textContentType="tel"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                                                         <color key="value" red="0.63137254899999995" green="0.15686274510000001" blue="0.17075381179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -299,7 +307,7 @@
                                                                 <color key="tintColor" red="0.63137254899999995" green="0.2274509804" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Arial-ItalicMT" family="Arial" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" textContentType="password"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                                                         <color key="value" red="0.63137254899999995" green="0.15686274510000001" blue="0.17075381179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -362,7 +370,7 @@
                                                                 <color key="tintColor" red="0.63137254899999995" green="0.2274509804" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="Arial-ItalicMT" family="Arial" pointSize="16"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="done" textContentType="password"/>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                                                         <color key="value" red="0.63137254899999995" green="0.15686274510000001" blue="0.17075381179999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -419,7 +427,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="74" translatesAutoresizingMaskIntoConstraints="NO" id="VbU-g8-Nmq">
-                                                <rect key="frame" x="110" y="662" width="194" height="60"/>
+                                                <rect key="frame" x="110" y="686" width="194" height="60"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YRC-QW-wXd" customClass="GIDSignInButton">
                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
@@ -445,23 +453,25 @@
                                         <constraints>
                                             <constraint firstItem="xwT-Zv-hbD" firstAttribute="centerX" secondItem="I0I-Iu-cGy" secondAttribute="centerX" id="2Hd-cJ-59t"/>
                                             <constraint firstItem="Lxb-5e-aj7" firstAttribute="leading" secondItem="H2f-Zv-az7" secondAttribute="leading" id="4JD-fe-IV4"/>
-                                            <constraint firstItem="GDe-ha-qee" firstAttribute="centerY" secondItem="I0I-Iu-cGy" secondAttribute="centerY" id="5ZA-ZC-kOw"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jed-tK-16Y" secondAttribute="trailing" id="Gs1-on-h3I"/>
                                             <constraint firstItem="VbU-g8-Nmq" firstAttribute="top" secondItem="xwT-Zv-hbD" secondAttribute="bottom" constant="25" id="IAd-Ez-6Yv"/>
                                             <constraint firstItem="xwT-Zv-hbD" firstAttribute="top" secondItem="GDe-ha-qee" secondAttribute="bottom" constant="25" id="Jgs-po-q2J"/>
                                             <constraint firstAttribute="trailing" secondItem="Lxb-5e-aj7" secondAttribute="trailing" id="Jr5-M0-CzW"/>
                                             <constraint firstItem="VbU-g8-Nmq" firstAttribute="centerX" secondItem="I0I-Iu-cGy" secondAttribute="centerX" id="ODH-o0-c3h"/>
+                                            <constraint firstItem="GDe-ha-qee" firstAttribute="top" secondItem="Jed-tK-16Y" secondAttribute="bottom" constant="15.5" id="OIe-4D-6aI"/>
                                             <constraint firstItem="Lxb-5e-aj7" firstAttribute="trailing" secondItem="H2f-Zv-az7" secondAttribute="trailing" id="PaW-WM-Mip"/>
                                             <constraint firstItem="Lxb-5e-aj7" firstAttribute="top" secondItem="I0I-Iu-cGy" secondAttribute="top" constant="30" id="Pe7-e8-V4g"/>
                                             <constraint firstItem="uA9-0s-pv4" firstAttribute="trailing" secondItem="H2f-Zv-az7" secondAttribute="trailing" id="UPv-xP-Pl2"/>
                                             <constraint firstItem="Lxb-5e-aj7" firstAttribute="leading" secondItem="I0I-Iu-cGy" secondAttribute="leading" id="UYB-cM-AiE"/>
                                             <constraint firstItem="Al2-wS-p9n" firstAttribute="top" secondItem="VbU-g8-Nmq" secondAttribute="bottom" constant="25" id="Vz5-oy-mFk"/>
                                             <constraint firstItem="Al2-wS-p9n" firstAttribute="centerX" secondItem="I0I-Iu-cGy" secondAttribute="centerX" id="auy-rZ-IsO"/>
-                                            <constraint firstItem="H2f-Zv-az7" firstAttribute="top" secondItem="I0I-Iu-cGy" secondAttribute="top" constant="130" id="fJg-oa-2kJ"/>
+                                            <constraint firstItem="H2f-Zv-az7" firstAttribute="top" secondItem="I0I-Iu-cGy" secondAttribute="top" constant="140" id="fJg-oa-2kJ"/>
                                             <constraint firstItem="uA9-0s-pv4" firstAttribute="leading" secondItem="H2f-Zv-az7" secondAttribute="leading" id="fbp-rY-iAN"/>
+                                            <constraint firstItem="Jed-tK-16Y" firstAttribute="leading" secondItem="I0I-Iu-cGy" secondAttribute="leading" id="gQz-Ol-ZyL"/>
                                             <constraint firstItem="GDe-ha-qee" firstAttribute="centerX" secondItem="I0I-Iu-cGy" secondAttribute="centerX" id="kD2-iF-bkR"/>
                                             <constraint firstItem="uA9-0s-pv4" firstAttribute="top" secondItem="I0I-Iu-cGy" secondAttribute="top" constant="30" id="r7F-pD-b1H"/>
-                                            <constraint firstItem="GDe-ha-qee" firstAttribute="top" secondItem="uA9-0s-pv4" secondAttribute="bottom" constant="8" symbolic="YES" id="sDh-Fs-z9k"/>
-                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Al2-wS-p9n" secondAttribute="bottom" constant="20" id="sNo-Mr-fj0"/>
+                                            <constraint firstAttribute="bottom" secondItem="Al2-wS-p9n" secondAttribute="bottom" constant="20" id="sNo-Mr-fj0"/>
+                                            <constraint firstItem="Jed-tK-16Y" firstAttribute="top" secondItem="H2f-Zv-az7" secondAttribute="bottom" constant="60" id="ydT-gY-QLX"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -489,6 +499,7 @@
                         <outlet property="_continueButton" destination="xwT-Zv-hbD" id="3HC-Ko-cdU"/>
                         <outlet property="_emailTextField" destination="RQk-VA-70a" id="wDz-Bj-Qef"/>
                         <outlet property="_googleSignInButton" destination="YRC-QW-wXd" id="lLg-TG-cfd"/>
+                        <outlet property="_loginLabel" destination="Jed-tK-16Y" id="Gfi-wC-SE8"/>
                         <outlet property="_loginSignupButton" destination="Al2-wS-p9n" id="DSa-nE-wlN"/>
                         <outlet property="_nameTextField" destination="ydq-a8-ofa" id="v7d-gV-gTL"/>
                         <outlet property="_passwordTextField" destination="jSe-Un-fpg" id="mre-jm-Ggz"/>
