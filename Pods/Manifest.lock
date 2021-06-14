@@ -92,6 +92,9 @@ PODS:
   - RxRelay (6.1.0):
     - RxSwift (= 6.1.0)
   - RxSwift (6.1.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
   - SkyFloatingLabelTextField (3.8.0)
 
 DEPENDENCIES:
@@ -105,6 +108,7 @@ DEPENDENCIES:
   - ReachabilitySwift (= 4.3.1)
   - RxCocoa
   - RxSwift
+  - SDWebImage
   - SkyFloatingLabelTextField (~> 3.0)
 
 SPEC REPOS:
@@ -132,6 +136,7 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SDWebImage
     - SkyFloatingLabelTextField
 
 SPEC CHECKSUMS:
@@ -158,8 +163,9 @@ SPEC CHECKSUMS:
   RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
   RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
   RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SkyFloatingLabelTextField: 5a338412114808e961fe2d14ea2c5452c8b6e4aa
 
-PODFILE CHECKSUM: f8b5a3a70ed952b1fb870d0a5141ea7b23de1632
+PODFILE CHECKSUM: 86283fd3387e2b9aef0c3275774d576146e4d9c2
 
 COCOAPODS: 1.10.1

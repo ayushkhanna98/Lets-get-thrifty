@@ -20,8 +20,7 @@ class WebServiceManager: WebServiceManagerInterface {
     func dispatch(block: RequestBlockInterface) {
      
         let urlString = block.request.api ?? ""
-        let request = _createUrlJsonContentRequest(block: block, urlString: urlString)
-//        block.request is MultipartRequest ? _createMultipartRequest(urlString: urlString, multipartRequest: (block.request as! MultipartRequest), block: block) :
+        let request = block.request is MultipartRequest ? _createMultipartRequest(urlString: urlString, multipartRequest: (block.request as! MultipartRequest), block: block) : _createUrlJsonContentRequest(block: block, urlString: urlString)
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             let httpResponse = (response as? HTTPURLResponse)
            // let httpResponseHeaders = (response as? HTTPURLResponse)?.allHeaderFields
@@ -82,6 +81,13 @@ class WebServiceManager: WebServiceManagerInterface {
         
         urlRequest.addValue("application/json", forHTTPHeaderField: "content-type")
         urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
+        return urlRequest
+    }
+    
+    private func _createMultipartRequest(urlString: String, multipartRequest: MultipartRequest, block: RequestBlockInterface) -> URLRequest{
+        var urlRequest = _commonUrlRequest(urlString: urlString, block: block)
+        urlRequest.addValue(multipartRequest.contentType, forHTTPHeaderField: "Content-Type")
+        urlRequest.httpBody = multipartRequest.multipartBody
         return urlRequest
     }
     
@@ -307,6 +313,69 @@ struct RequestBlock<T: Decodable> : RequestBlockInterface {
         }
     }
 
+}
+
+class MultipartRequest: Request {
+    
+    struct ContentBody {
+        let data: NSData
+        let mimeType: String
+        let fileName: String
+    }
+    
+    let boundary: String = {
+       return "Boundary-\(UUID().uuidString)"
+    }()
+    
+    var contentType: String {
+        return "multipart/form-data; boundary=\(boundary)"
+    }
+    
+    @available(*, unavailable)
+    override var codeableParameters: Data? {
+        get {
+            return nil
+        }
+    }
+    
+    var multipartBody: Data {
+        return createDataBody(withParameters: parameters)
+    }
+    
+    private func createDataBody(withParameters params: [String: Any]) -> Data {
+        
+        let lineBreak = "\r\n"
+        var body = Data()
+        
+            for (key, value) in parameters {
+                
+                if let contentBody = value as? ContentBody {
+                    body.append("--\(boundary + lineBreak)")
+                    body.append("Content-Disposition: form-data; name=\"\(key)\"; filename=\"\(contentBody.fileName)\"\(lineBreak)")
+                    body.append("Content-Type: \(contentBody.mimeType + lineBreak + lineBreak)")
+                    body.append(contentBody.data as Data)
+                } else if  let contentBody = value as? [ContentBody]{
+                    
+                    for content in contentBody {
+                        
+                        body.append("--\(boundary + lineBreak)")
+                        body.append("Content-Disposition: form-data; name=\"\(key)\"; filename=\"\(content.fileName)\"\(lineBreak)")
+                        body.append("Content-Type: \(content.mimeType + lineBreak + lineBreak)")
+                        body.append(content.data as Data)
+                        body.append("\(key)\(lineBreak)")
+                        }
+
+                    
+                } else {
+                    body.append("--\(boundary + lineBreak)")
+                    body.append("Content-Disposition: form-data; name=\"\(key)\"\(lineBreak + lineBreak)")
+                }
+                body.append("\(value)\(lineBreak)")
+            }
+        body.append("--\(boundary)--\(lineBreak)")
+        
+        return body
+    }
 }
 
 func appPrint(_ items: Any..., separator: String = " ", terminator: String = "\n") {

@@ -29,4 +29,14 @@ struct APIClient {
     static var getUser: String {
         authApi + "/me"
     }
+    
+    //MARK: - Listings APIs
+    
+    static var listings : String {
+        baseURL + "/listings"
+    }
+    
+    static func listingsPhotos(listingId: String) -> String {
+        return (listings + "/" + listingId + "/" + "photo")
+    }
 }

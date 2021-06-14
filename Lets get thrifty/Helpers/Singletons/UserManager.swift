@@ -33,7 +33,7 @@ class UserManager {
     
     private func _loadLocalData() throws {
        try self.user = UserDefaults.standard.getObject(forKey: UserManager.userKey, castTo: UserModel.self)
-       try self.loginToken = UserDefaults.standard.getObject(forKey: UserManager.userKey, castTo: LoginToken.self)
+       try self.loginToken = UserDefaults.standard.getObject(forKey: UserManager.loginTokenKey, castTo: LoginToken.self)
     }
     
 }

@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21DCBDC0E0F888E7B8326596 /* Pods_Lets_get_thriftyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA5A0807DC8408E095D801E /* Pods_Lets_get_thriftyTests.framework */; };
 		241488C726519EA60028A685 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241488C626519EA50028A685 /* APIClient.swift */; };
 		241488D42651BED70028A685 /* AuthReporitory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241488D32651BED60028A685 /* AuthReporitory.swift */; };
 		241488DC2651C6AF0028A685 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241488DB2651C6AF0028A685 /* UserModel.swift */; };
+		241C565C2667F3CE00DE41A5 /* ListingWebModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241C565B2667F3CE00DE41A5 /* ListingWebModel.swift */; };
+		241C565E2667F77400DE41A5 /* LisitngsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241C565D2667F77400DE41A5 /* LisitngsRepository.swift */; };
+		241C5662266925A500DE41A5 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241C5661266925A500DE41A5 /* Listing.swift */; };
+		241C5664266BD61B00DE41A5 /* Success.json in Resources */ = {isa = PBXBuildFile; fileRef = 241C5663266BD61B00DE41A5 /* Success.json */; };
 		2426C661264E7368001F1883 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426C660264E7368001F1883 /* BaseViewController.swift */; };
 		2426C669264E7391001F1883 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2426C668264E7391001F1883 /* BaseViewModel.swift */; };
 		2437F2B4263483E000F53F86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2437F2B3263483E000F53F86 /* AppDelegate.swift */; };
@@ -38,6 +41,8 @@
 		244BC5492659414F00D70129 /* SwipeableCardViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244BC5482659414F00D70129 /* SwipeableCardViewContainer.swift */; };
 		246510362657B70D00D060FA /* CustomTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246510352657B70D00D060FA /* CustomTabBarControllerViewController.swift */; };
 		24666D542665637600125230 /* AddYourAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24666D532665637600125230 /* AddYourAddressViewController.swift */; };
+		24666D562666B1CD00125230 /* ListingDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24666D552666B1CC00125230 /* ListingDetailsModel.swift */; };
+		24666D582666B25F00125230 /* AddYourAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24666D572666B25F00125230 /* AddYourAddressViewModel.swift */; };
 		248C0FCD265EDC34002349AA /* BottomSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248C0FCC265EDC34002349AA /* BottomSheetController.swift */; };
 		248C0FCF265EE705002349AA /* UploadImageBottomSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 248C0FCE265EE705002349AA /* UploadImageBottomSheetController.swift */; };
 		2493261E2640649A007FB424 /* LoginSignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2493261D2640649A007FB424 /* LoginSignupViewController.swift */; };
@@ -59,6 +64,10 @@
 		24C0D55126543E2E008E398A /* Sell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C0D55026543E2E008E398A /* Sell.storyboard */; };
 		24C0D55626543E7F008E398A /* WishList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C0D55526543E7F008E398A /* WishList.storyboard */; };
 		24C0D55B26543EC1008E398A /* Swipe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C0D55A26543EC1008E398A /* Swipe.storyboard */; };
+		24E84047266E86D1008C589F /* AddListingNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E84046266E86D1008C589F /* AddListingNavigationController.swift */; };
+		24E84049266EA776008C589F /* GenericPaginationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E84048266EA776008C589F /* GenericPaginationResponse.swift */; };
+		24E8404C266EAA5A008C589F /* SellYourListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E8404A266EAA5A008C589F /* SellYourListingTableViewCell.swift */; };
+		24E8404D266EAA5A008C589F /* SellYourListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E8404B266EAA5A008C589F /* SellYourListingTableViewCell.xib */; };
 		24FD6D5A264ECADD000FD454 /* WebserviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6D59264ECADD000FD454 /* WebserviceManager.swift */; };
 		24FD6D5F264ED5CE000FD454 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6D5E264ED5CE000FD454 /* Constants.swift */; };
 		24FD6D65264ED7C5000FD454 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6D64264ED7C5000FD454 /* UserManager.swift */; };
@@ -70,8 +79,9 @@
 		24FD6DAB264F01B0000FD454 /* warning.json in Resources */ = {isa = PBXBuildFile; fileRef = 24FD6DAA264F01AF000FD454 /* warning.json */; };
 		24FD6DB0264F01BF000FD454 /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = 24FD6DAF264F01BE000FD454 /* error.json */; };
 		24FD6DB5264F05A0000FD454 /* LoginSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6DB4264F05A0000FD454 /* LoginSignupViewModel.swift */; };
-		B58A3A8DF68714341661C34C /* Pods_Lets_get_thrifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A820E864BA4B0BEF7E921EE /* Pods_Lets_get_thrifty.framework */; };
-		F05DD96EB2E5D2E35CEB2851 /* Pods_Lets_get_thrifty_Lets_get_thriftyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C5FE092A1B26EB90DE5DEB8 /* Pods_Lets_get_thrifty_Lets_get_thriftyUITests.framework */; };
+		684E81C9763961D6A6A4B9D0 /* Pods_Lets_get_thrifty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2018F39B3CC1D097B62B53 /* Pods_Lets_get_thrifty.framework */; };
+		82C50982AD63877FFAF5E740 /* Pods_Lets_get_thrifty_Lets_get_thriftyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F9107BFA7245786EEF240E5 /* Pods_Lets_get_thrifty_Lets_get_thriftyUITests.framework */; };
+		B2A8589ED00F2248DB5720BF /* Pods_Lets_get_thriftyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A57D7DF8A9950C4188B324 /* Pods_Lets_get_thriftyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,12 +102,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C5FE092A1B26EB90DE5DEB8 /* Pods_Lets_get_thrifty_Lets_get_thriftyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lets_get_thrifty_Lets_get_thriftyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0DD7AF506C5601B9A255B234 /* Pods-Lets get thriftyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lets get thriftyTests.debug.xcconfig"; path = "Target Support Files/Pods-Lets get thriftyTests/Pods-Lets get thriftyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1A820E864BA4B0BEF7E921EE /* Pods_Lets_get_thrifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lets_get_thrifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		241488C626519EA50028A685 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		241488D32651BED60028A685 /* AuthReporitory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthReporitory.swift; sourceTree = "<group>"; };
 		241488DB2651C6AF0028A685 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		241C565B2667F3CE00DE41A5 /* ListingWebModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingWebModel.swift; sourceTree = "<group>"; };
+		241C565D2667F77400DE41A5 /* LisitngsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LisitngsRepository.swift; sourceTree = "<group>"; };
+		241C5661266925A500DE41A5 /* Listing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		241C5663266BD61B00DE41A5 /* Success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Success.json; sourceTree = "<group>"; };
 		2426C660264E7368001F1883 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		2426C668264E7391001F1883 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		2437F2B0263483E000F53F86 /* Lets get thrifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lets get thrifty.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +142,8 @@
 		244BC5482659414F00D70129 /* SwipeableCardViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeableCardViewContainer.swift; sourceTree = "<group>"; };
 		246510352657B70D00D060FA /* CustomTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarControllerViewController.swift; sourceTree = "<group>"; };
 		24666D532665637600125230 /* AddYourAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddYourAddressViewController.swift; sourceTree = "<group>"; };
+		24666D552666B1CC00125230 /* ListingDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailsModel.swift; sourceTree = "<group>"; };
+		24666D572666B25F00125230 /* AddYourAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddYourAddressViewModel.swift; sourceTree = "<group>"; };
 		248C0FCC265EDC34002349AA /* BottomSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetController.swift; sourceTree = "<group>"; };
 		248C0FCE265EE705002349AA /* UploadImageBottomSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadImageBottomSheetController.swift; sourceTree = "<group>"; };
 		2493261D2640649A007FB424 /* LoginSignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +165,10 @@
 		24C0D55026543E2E008E398A /* Sell.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sell.storyboard; sourceTree = "<group>"; };
 		24C0D55526543E7F008E398A /* WishList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WishList.storyboard; sourceTree = "<group>"; };
 		24C0D55A26543EC1008E398A /* Swipe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Swipe.storyboard; sourceTree = "<group>"; };
+		24E84046266E86D1008C589F /* AddListingNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddListingNavigationController.swift; sourceTree = "<group>"; };
+		24E84048266EA776008C589F /* GenericPaginationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericPaginationResponse.swift; sourceTree = "<group>"; };
+		24E8404A266EAA5A008C589F /* SellYourListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellYourListingTableViewCell.swift; sourceTree = "<group>"; };
+		24E8404B266EAA5A008C589F /* SellYourListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SellYourListingTableViewCell.xib; sourceTree = "<group>"; };
 		24FD6D59264ECADD000FD454 /* WebserviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebserviceManager.swift; sourceTree = "<group>"; };
 		24FD6D5E264ED5CE000FD454 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		24FD6D64264ED7C5000FD454 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
@@ -163,12 +180,15 @@
 		24FD6DAA264F01AF000FD454 /* warning.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = warning.json; sourceTree = "<group>"; };
 		24FD6DAF264F01BE000FD454 /* error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
 		24FD6DB4264F05A0000FD454 /* LoginSignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupViewModel.swift; sourceTree = "<group>"; };
-		44A75ACDE2290414AE27B144 /* Pods-Lets get thrifty-Lets get thriftyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lets get thrifty-Lets get thriftyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		50C5B07EB416F0C1321DFF1B /* Pods-Lets get thriftyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lets get thriftyTests.release.xcconfig"; path = "Target Support Files/Pods-Lets get thriftyTests/Pods-Lets get thriftyTests.release.xcconfig"; sourceTree = "<group>"; };
-		50E158A3A94A53A99C786D06 /* Pods-Lets get thrifty-Lets get thriftyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lets get thrifty-Lets get thriftyUITests.release.xcconfig"; path = "Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A9E81C90C5038D98CF6C4983 /* Pods-Lets get thrifty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lets get thrifty.debug.xcconfig"; path = "Target Support Files/Pods-Lets get thrifty/Pods-Lets get thrifty.debug.xcconfig"; sourceTree = "<group>"; };
-		BEA5A0807DC8408E095D801E /* Pods_Lets_get_thriftyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lets_get_thriftyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF98D932482535792D91606D /* Pods-Lets get thrifty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lets get thrifty.release.xcconfig"; path = "Target Support Files/Pods-Lets get thrifty/Pods-Lets get thrifty.release.xcconfig"; sourceTree = "<group>"; };
+		2B82D6D660ED11C9967827F4 /* Pods-Lets get thriftyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lets get thriftyTests.release.xcconfig"; path = "Target Support Files/Pods-Lets get thriftyTests/Pods-Lets get thriftyTests.release.xcconfig"; sourceTree = "<group>"; };
+		2F9107BFA7245786EEF240E5 /* Pods_Lets_get_thrifty_Lets_get_thriftyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lets_get_thrifty_Lets_get_thriftyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3542B3006A61A43BC0507CF9 /* Pods-Lets get thrifty-Lets get thriftyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lets get thrifty-Lets get thriftyUITests.release.xcconfig"; path = "Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		79A57D7DF8A9950C4188B324 /* Pods_Lets_get_thriftyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lets_get_thriftyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86CEDC669529407E6C4F541B /* Pods-Lets get thriftyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lets get thriftyTests.debug.xcconfig"; path = "Target Support Files/Pods-Lets get thriftyTests/Pods-Lets get thriftyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B2018F39B3CC1D097B62B53 /* Pods_Lets_get_thrifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lets_get_thrifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		941614A9459B1D8A6989FA2B /* Pods-Lets get thrifty-Lets get thriftyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lets get thrifty-Lets get thriftyUITests.debug.xcconfig"; path = "Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D0208A6835B8E16831201A5 /* Pods-Lets get thrifty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lets get thrifty.release.xcconfig"; path = "Target Support Files/Pods-Lets get thrifty/Pods-Lets get thrifty.release.xcconfig"; sourceTree = "<group>"; };
+		E20120D856913FC3DC7BC84B /* Pods-Lets get thrifty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lets get thrifty.debug.xcconfig"; path = "Target Support Files/Pods-Lets get thrifty/Pods-Lets get thrifty.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B58A3A8DF68714341661C34C /* Pods_Lets_get_thrifty.framework in Frameworks */,
+				684E81C9763961D6A6A4B9D0 /* Pods_Lets_get_thrifty.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21DCBDC0E0F888E7B8326596 /* Pods_Lets_get_thriftyTests.framework in Frameworks */,
+				B2A8589ED00F2248DB5720BF /* Pods_Lets_get_thriftyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,13 +212,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F05DD96EB2E5D2E35CEB2851 /* Pods_Lets_get_thrifty_Lets_get_thriftyUITests.framework in Frameworks */,
+				82C50982AD63877FFAF5E740 /* Pods_Lets_get_thrifty_Lets_get_thriftyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		125B3207B151D0B48E1AB545 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B2018F39B3CC1D097B62B53 /* Pods_Lets_get_thrifty.framework */,
+				2F9107BFA7245786EEF240E5 /* Pods_Lets_get_thrifty_Lets_get_thriftyUITests.framework */,
+				79A57D7DF8A9950C4188B324 /* Pods_Lets_get_thriftyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		241488CB26519EBA0028A685 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				241488D32651BED60028A685 /* AuthReporitory.swift */,
+				241C565D2667F77400DE41A5 /* LisitngsRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -220,6 +251,7 @@
 		2426C650264E70A3001F1883 /* lottie_files */ = {
 			isa = PBXGroup;
 			children = (
+				241C5663266BD61B00DE41A5 /* Success.json */,
 				24FD6DAF264F01BE000FD454 /* error.json */,
 				24FD6DAA264F01AF000FD454 /* warning.json */,
 				24FD6D98264EF6C1000FD454 /* Loader.json */,
@@ -274,6 +306,10 @@
 			children = (
 				241488DB2651C6AF0028A685 /* UserModel.swift */,
 				24C0D52F2652E964008E398A /* LoginToken.swift */,
+				24666D552666B1CC00125230 /* ListingDetailsModel.swift */,
+				241C565B2667F3CE00DE41A5 /* ListingWebModel.swift */,
+				241C5661266925A500DE41A5 /* Listing.swift */,
+				24E84048266EA776008C589F /* GenericPaginationResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -287,6 +323,7 @@
 				244BC53D265938D700D70129 /* CardSwipingViewModel.swift */,
 				24A81387265C251A0061CCFA /* SellYourListingViewModel.swift */,
 				24A813A2265C5FC90061CCFA /* AddListingViewModel.swift */,
+				24666D572666B25F00125230 /* AddYourAddressViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -304,6 +341,7 @@
 				248C0FCC265EDC34002349AA /* BottomSheetController.swift */,
 				248C0FCE265EE705002349AA /* UploadImageBottomSheetController.swift */,
 				24666D532665637600125230 /* AddYourAddressViewController.swift */,
+				24E84046266E86D1008C589F /* AddListingNavigationController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -340,7 +378,7 @@
 				2437F2D4263483E600F53F86 /* Lets get thriftyUITests */,
 				2437F2B1263483E000F53F86 /* Products */,
 				86FA0278985C9428CAC52AE5 /* Pods */,
-				DEB027598021EABC95583E0C /* Frameworks */,
+				125B3207B151D0B48E1AB545 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -423,6 +461,8 @@
 				24A81391265C26C60061CCFA /* SellYourListingTableViewHeader.swift */,
 				24A81396265C46AF0061CCFA /* YourListingsTableViewCell.swift */,
 				24A81397265C46B00061CCFA /* YourListingsTableViewCell.xib */,
+				24E8404A266EAA5A008C589F /* SellYourListingTableViewCell.swift */,
+				24E8404B266EAA5A008C589F /* SellYourListingTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -430,24 +470,14 @@
 		86FA0278985C9428CAC52AE5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A9E81C90C5038D98CF6C4983 /* Pods-Lets get thrifty.debug.xcconfig */,
-				BF98D932482535792D91606D /* Pods-Lets get thrifty.release.xcconfig */,
-				44A75ACDE2290414AE27B144 /* Pods-Lets get thrifty-Lets get thriftyUITests.debug.xcconfig */,
-				50E158A3A94A53A99C786D06 /* Pods-Lets get thrifty-Lets get thriftyUITests.release.xcconfig */,
-				0DD7AF506C5601B9A255B234 /* Pods-Lets get thriftyTests.debug.xcconfig */,
-				50C5B07EB416F0C1321DFF1B /* Pods-Lets get thriftyTests.release.xcconfig */,
+				E20120D856913FC3DC7BC84B /* Pods-Lets get thrifty.debug.xcconfig */,
+				9D0208A6835B8E16831201A5 /* Pods-Lets get thrifty.release.xcconfig */,
+				941614A9459B1D8A6989FA2B /* Pods-Lets get thrifty-Lets get thriftyUITests.debug.xcconfig */,
+				3542B3006A61A43BC0507CF9 /* Pods-Lets get thrifty-Lets get thriftyUITests.release.xcconfig */,
+				86CEDC669529407E6C4F541B /* Pods-Lets get thriftyTests.debug.xcconfig */,
+				2B82D6D660ED11C9967827F4 /* Pods-Lets get thriftyTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		DEB027598021EABC95583E0C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1A820E864BA4B0BEF7E921EE /* Pods_Lets_get_thrifty.framework */,
-				0C5FE092A1B26EB90DE5DEB8 /* Pods_Lets_get_thrifty_Lets_get_thriftyUITests.framework */,
-				BEA5A0807DC8408E095D801E /* Pods_Lets_get_thriftyTests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,12 +487,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2437F2DA263483E600F53F86 /* Build configuration list for PBXNativeTarget "Lets get thrifty" */;
 			buildPhases = (
-				C8A75CE0B43D3D3C2956B787 /* [CP] Check Pods Manifest.lock */,
+				6B9938444BC434F6A80EA43B /* [CP] Check Pods Manifest.lock */,
 				2437F2AC263483E000F53F86 /* Sources */,
 				2437F2AD263483E000F53F86 /* Frameworks */,
 				2437F2AE263483E000F53F86 /* Resources */,
-				B82FAACEC724CBA04EE6AA10 /* [CP] Embed Pods Frameworks */,
-				B5A0E71C3A63B68B4E82381E /* [CP] Copy Pods Resources */,
+				7AD0B2EEE2CFC2C5CA3A421E /* [CP] Embed Pods Frameworks */,
+				5BBC1F6B1E637FB332261E4D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -477,7 +507,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2437F2DD263483E600F53F86 /* Build configuration list for PBXNativeTarget "Lets get thriftyTests" */;
 			buildPhases = (
-				AB9B0A875642B61DF255785B /* [CP] Check Pods Manifest.lock */,
+				31DBF4B8E08EB81F3A21A3BC /* [CP] Check Pods Manifest.lock */,
 				2437F2C2263483E600F53F86 /* Sources */,
 				2437F2C3263483E600F53F86 /* Frameworks */,
 				2437F2C4263483E600F53F86 /* Resources */,
@@ -496,12 +526,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2437F2E0263483E600F53F86 /* Build configuration list for PBXNativeTarget "Lets get thriftyUITests" */;
 			buildPhases = (
-				BE0F500520A28F811962BAD0 /* [CP] Check Pods Manifest.lock */,
+				9D1728400896CB44D10ACC34 /* [CP] Check Pods Manifest.lock */,
 				2437F2CD263483E600F53F86 /* Sources */,
 				2437F2CE263483E600F53F86 /* Frameworks */,
 				2437F2CF263483E600F53F86 /* Resources */,
-				837AA3ADB9D67407D3489ABF /* [CP] Embed Pods Frameworks */,
-				4B78DE105FA9D4F298B1D969 /* [CP] Copy Pods Resources */,
+				E5806F497AB2FFA72FC1A520 /* [CP] Embed Pods Frameworks */,
+				A114F577092A5E7D28E716A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -567,6 +597,7 @@
 				24FD6DAB264F01B0000FD454 /* warning.json in Resources */,
 				244BC50526583BA000D70129 /* SwipeableCardView.xib in Resources */,
 				249326712641E66B007FB424 /* GoogleService-Info.plist in Resources */,
+				241C5664266BD61B00DE41A5 /* Success.json in Resources */,
 				244BC4E72657F76A00D70129 /* CardView.xib in Resources */,
 				24C0D55126543E2E008E398A /* Sell.storyboard in Resources */,
 				24A81399265C46B00061CCFA /* YourListingsTableViewCell.xib in Resources */,
@@ -577,6 +608,7 @@
 				24C0D55B26543EC1008E398A /* Swipe.storyboard in Resources */,
 				2437F31F2634AEBF00F53F86 /* Rocket_Launch_Lottie.json in Resources */,
 				24FD6DA1264EF916000FD454 /* Others.storyboard in Resources */,
+				24E8404D266EAA5A008C589F /* SellYourListingTableViewCell.xib in Resources */,
 				24C0D55626543E7F008E398A /* WishList.storyboard in Resources */,
 				24A8138D265C266E0061CCFA /* SellYourListingTableViewHeader.xib in Resources */,
 				24C0D54226543B1B008E398A /* TabBarStoryboard.storyboard in Resources */,
@@ -602,41 +634,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4B78DE105FA9D4F298B1D969 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		837AA3ADB9D67407D3489ABF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB9B0A875642B61DF255785B /* [CP] Check Pods Manifest.lock */ = {
+		31DBF4B8E08EB81F3A21A3BC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -658,7 +656,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B5A0E71C3A63B68B4E82381E /* [CP] Copy Pods Resources */ = {
+		5BBC1F6B1E637FB332261E4D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -675,46 +673,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty/Pods-Lets get thrifty-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B82FAACEC724CBA04EE6AA10 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty/Pods-Lets get thrifty-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty/Pods-Lets get thrifty-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty/Pods-Lets get thrifty-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE0F500520A28F811962BAD0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Lets get thrifty-Lets get thriftyUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C8A75CE0B43D3D3C2956B787 /* [CP] Check Pods Manifest.lock */ = {
+		6B9938444BC434F6A80EA43B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -736,6 +695,79 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7AD0B2EEE2CFC2C5CA3A421E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty/Pods-Lets get thrifty-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty/Pods-Lets get thrifty-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty/Pods-Lets get thrifty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D1728400896CB44D10ACC34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lets get thrifty-Lets get thriftyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A114F577092A5E7D28E716A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5806F497AB2FFA72FC1A520 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Lets get thrifty-Lets get thriftyUITests/Pods-Lets get thrifty-Lets get thriftyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -750,6 +782,7 @@
 				24A81392265C26C60061CCFA /* SellYourListingTableViewHeader.swift in Sources */,
 				24A8139E265C5FA10061CCFA /* AddListingViewController.swift in Sources */,
 				244BC5392659385000D70129 /* CardSwipingViewController.swift in Sources */,
+				24666D562666B1CD00125230 /* ListingDetailsModel.swift in Sources */,
 				248C0FCF265EE705002349AA /* UploadImageBottomSheetController.swift in Sources */,
 				2426C661264E7368001F1883 /* BaseViewController.swift in Sources */,
 				246510362657B70D00D060FA /* CustomTabBarControllerViewController.swift in Sources */,
@@ -764,8 +797,10 @@
 				2437F2B4263483E000F53F86 /* AppDelegate.swift in Sources */,
 				241488D42651BED70028A685 /* AuthReporitory.swift in Sources */,
 				24FD6DB5264F05A0000FD454 /* LoginSignupViewModel.swift in Sources */,
+				24E84047266E86D1008C589F /* AddListingNavigationController.swift in Sources */,
 				24A81398265C46B00061CCFA /* YourListingsTableViewCell.swift in Sources */,
 				244BC4FE26583B8000D70129 /* SwipeableView.swift in Sources */,
+				24E84049266EA776008C589F /* GenericPaginationResponse.swift in Sources */,
 				2437F2B6263483E000F53F86 /* SceneDelegate.swift in Sources */,
 				24A81388265C251A0061CCFA /* SellYourListingViewModel.swift in Sources */,
 				24FD6DA6264EF9E9000FD454 /* AlertViewController.swift in Sources */,
@@ -774,11 +809,16 @@
 				241488DC2651C6AF0028A685 /* UserModel.swift in Sources */,
 				24FD6D6D264EF500000FD454 /* Helper.swift in Sources */,
 				24C0D5302652E964008E398A /* LoginToken.swift in Sources */,
+				241C565E2667F77400DE41A5 /* LisitngsRepository.swift in Sources */,
 				244BC4F126581ED100D70129 /* SwipableCardHelperClasses.swift in Sources */,
 				244BC50426583BA000D70129 /* SwipeableCardView.swift in Sources */,
+				24666D582666B25F00125230 /* AddYourAddressViewModel.swift in Sources */,
 				24FD6D91264EF633000FD454 /* Loader.swift in Sources */,
 				24A81380265C20790061CCFA /* SellYourListingViewController.swift in Sources */,
+				241C5662266925A500DE41A5 /* Listing.swift in Sources */,
 				2426C669264E7391001F1883 /* BaseViewModel.swift in Sources */,
+				241C565C2667F3CE00DE41A5 /* ListingWebModel.swift in Sources */,
+				24E8404C266EAA5A008C589F /* SellYourListingTableViewCell.swift in Sources */,
 				241488C726519EA60028A685 /* APIClient.swift in Sources */,
 				24FD6D5F264ED5CE000FD454 /* Constants.swift in Sources */,
 			);
@@ -953,7 +993,7 @@
 		};
 		2437F2DB263483E600F53F86 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A9E81C90C5038D98CF6C4983 /* Pods-Lets get thrifty.debug.xcconfig */;
+			baseConfigurationReference = E20120D856913FC3DC7BC84B /* Pods-Lets get thrifty.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -973,7 +1013,7 @@
 		};
 		2437F2DC263483E600F53F86 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF98D932482535792D91606D /* Pods-Lets get thrifty.release.xcconfig */;
+			baseConfigurationReference = 9D0208A6835B8E16831201A5 /* Pods-Lets get thrifty.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -993,7 +1033,7 @@
 		};
 		2437F2DE263483E600F53F86 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DD7AF506C5601B9A255B234 /* Pods-Lets get thriftyTests.debug.xcconfig */;
+			baseConfigurationReference = 86CEDC669529407E6C4F541B /* Pods-Lets get thriftyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1015,7 +1055,7 @@
 		};
 		2437F2DF263483E600F53F86 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50C5B07EB416F0C1321DFF1B /* Pods-Lets get thriftyTests.release.xcconfig */;
+			baseConfigurationReference = 2B82D6D660ED11C9967827F4 /* Pods-Lets get thriftyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1037,7 +1077,7 @@
 		};
 		2437F2E1263483E600F53F86 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 44A75ACDE2290414AE27B144 /* Pods-Lets get thrifty-Lets get thriftyUITests.debug.xcconfig */;
+			baseConfigurationReference = 941614A9459B1D8A6989FA2B /* Pods-Lets get thrifty-Lets get thriftyUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27C7DA53T9;
@@ -1057,7 +1097,7 @@
 		};
 		2437F2E2263483E600F53F86 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50E158A3A94A53A99C786D06 /* Pods-Lets get thrifty-Lets get thriftyUITests.release.xcconfig */;
+			baseConfigurationReference = 3542B3006A61A43BC0507CF9 /* Pods-Lets get thrifty-Lets get thriftyUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 27C7DA53T9;

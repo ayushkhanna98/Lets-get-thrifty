@@ -72,7 +72,7 @@ class LoginSignupViewModel: BaseViewModel {
     }
     
     func validateEmail(email: String) -> String? {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailRegEx = Constants.emailRegex
         
         return NSPredicate(format:"SELF MATCHES %@", emailRegEx).evaluate(with: email) ? nil : "Please enter a valid email"
     }

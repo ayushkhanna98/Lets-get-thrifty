@@ -114,4 +114,15 @@ extension UIViewController{
         vc.message = errorMessage
         self.present(vc, animated: true, completion: nil)
     }
+    
+    func showAlertSuccess(title: String, message: String, dismiss: Double? = nil, dismissCallback: (()->())? ) {
+        let vc = UIStoryboard.init(name: "Others", bundle: nil).instantiateViewController(identifier: "AlertViewController") as! AlertViewController
+        vc.alertType = .Success
+        vc.showSecondButton = false
+        vc.alertTitle = title
+        vc.message = message
+        vc.dismissAfter = dismiss
+        vc.dismisCallback = dismissCallback
+        self.present(vc, animated: true, completion: nil)
+    }
 }
