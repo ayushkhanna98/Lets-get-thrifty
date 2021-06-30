@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9q-zv-4Jb">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,7 +13,7 @@
         <!--Login Signup View Controller-->
         <scene sceneID="l36-YH-veq">
             <objects>
-                <viewController id="q9q-zv-4Jb" customClass="LoginSignupViewController" customModule="Lets_get_thrifty" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginSignupViewController" id="q9q-zv-4Jb" customClass="LoginSignupViewController" customModule="Lets_get_thrifty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vtU-Kg-MUl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -542,19 +543,19 @@
     </scenes>
     <designables>
         <designable name="RQk-VA-70a">
-            <size key="intrinsicContentSize" width="290" height="40.388671875"/>
+            <size key="intrinsicContentSize" width="68.5" height="34"/>
         </designable>
         <designable name="jSe-Un-fpg">
-            <size key="intrinsicContentSize" width="290" height="40.388671875"/>
+            <size key="intrinsicContentSize" width="98.5" height="34"/>
         </designable>
         <designable name="r4s-dY-fKK">
-            <size key="intrinsicContentSize" width="222.5" height="40.388671875"/>
+            <size key="intrinsicContentSize" width="136" height="34"/>
         </designable>
         <designable name="wc6-H3-qSo">
-            <size key="intrinsicContentSize" width="290" height="40.388671875"/>
+            <size key="intrinsicContentSize" width="159" height="34"/>
         </designable>
         <designable name="ydq-a8-ofa">
-            <size key="intrinsicContentSize" width="290" height="40.388671875"/>
+            <size key="intrinsicContentSize" width="71" height="34"/>
         </designable>
     </designables>
     <resources>

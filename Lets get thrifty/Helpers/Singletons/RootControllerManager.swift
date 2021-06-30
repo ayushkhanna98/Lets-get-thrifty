@@ -18,12 +18,14 @@ struct RootControllerManager {
     func setRootViewController() {
         
         if UserManager.shared.isLoggedIn {
-            let tabBar = UIStoryboard.init(name: "TabBarStoryboard", bundle: nil)
-            let vc = tabBar.instantiateViewController(identifier: "TabBarController") as! UITabBarController
+            let storyBoard = UIStoryboard.init(name: "TabBarStoryboard", bundle: nil)
+            let vc = storyBoard.instantiateViewController(identifier: "TabBarController") as! UITabBarController
             
             UIApplication.shared.windows.first!.rootViewController = vc
         } else {
-            
+            let storyBoard = UIStoryboard.init(name: "LoginOrSignUp", bundle: nil)
+            let vc = storyBoard.instantiateViewController(identifier: "LoginSignupViewController")
+            UIApplication.shared.windows.first!.rootViewController = vc
         }
     }
 }

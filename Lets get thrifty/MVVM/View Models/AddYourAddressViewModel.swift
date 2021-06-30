@@ -28,7 +28,8 @@ class AddYourAddressViewModel: BaseViewModel {
     func postListing(contact: ListingContactModel) {
         self.isLoading.accept(true)
         let listing = ListingWebModel(listingDetails: listingDetails, listingContact: contact)
-        LisingsRepository.shared.postListing(with: self.webserviceManager, listingModel: listing) { [weak self] listing, error in
+        LisingsRepository.shared.postListing(with: self.webserviceManager,
+                                             listingModel: listing) { [weak self] listing, error in
             if let e = error {
                 self?.isLoading.accept(false)
                 self?.generalErrors.accept(e)
@@ -43,7 +44,6 @@ class AddYourAddressViewModel: BaseViewModel {
             self?.postPictures(id: id)
         }
     }
-    
     
     func postPictures(id: String) {
         self.isLoading.accept(true)

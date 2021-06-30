@@ -22,6 +22,10 @@ class UserManager {
     var loginToken: LoginToken?
     var user: UserModel?
     
+    var userName: String? {
+        user?.name
+    }
+    
     var isLoggedIn : Bool {
         return UserDefaults.standard.object(forKey: UserManager.loginTokenKey) != nil
     }
@@ -29,6 +33,10 @@ class UserManager {
     func saveLocally() throws {
        try UserDefaults.standard.setObject(user, forKey: UserManager.userKey)
        try UserDefaults.standard.setObject(loginToken, forKey: UserManager.loginTokenKey)
+    }
+    
+    func logOutUser() {
+        LocalStorageManager.shared.resetAllUserRelatedData()
     }
     
     private func _loadLocalData() throws {

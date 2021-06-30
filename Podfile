@@ -12,13 +12,15 @@ pod 'SkyFloatingLabelTextField', '~> 3.0'
 pod 'IQKeyboardManagerSwift'
 pod 'Firebase/Core'
 pod 'Firebase/Auth'
-pod 'GoogleSignIn'
+#pod 'GoogleSignIn'
 pod 'CountryPickerView'
 pod 'RxSwift'
 pod 'RxCocoa'
 pod 'ReachabilitySwift', '4.3.1'
 pod 'pop'
 pod 'SDWebImage'
+pod 'Cosmos', '~> 23.0'
+pod 'Hero'
 
   target 'Lets get thriftyTests' do
     inherit! :search_paths

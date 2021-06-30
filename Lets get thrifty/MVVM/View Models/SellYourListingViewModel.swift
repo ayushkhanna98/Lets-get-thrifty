@@ -32,4 +32,10 @@ class SellYourListingViewModel: BaseViewModel {
             self?.listings.accept(l)
         }
     }
+    
+    func addNewListing(listing: Listing) {
+        var listings = self.listings.value
+        listings.append(listing)
+        self.listings.accept(listings)
+    }
 }

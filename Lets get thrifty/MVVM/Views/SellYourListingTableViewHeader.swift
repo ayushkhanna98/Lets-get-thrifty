@@ -15,9 +15,6 @@ class SellYourListingTableViewHeader: UITableViewHeaderFooterView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.layer.cornerRadius = 15
-        self.layer.borderColor = UIColor.black.cgColor
-        self.layer.borderWidth = 0.75
         let gestureRec = UITapGestureRecognizer(target: self, action: #selector(_userDidTap))
         self.addGestureRecognizer(gestureRec)
         

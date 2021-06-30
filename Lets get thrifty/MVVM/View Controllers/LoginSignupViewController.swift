@@ -7,7 +7,7 @@
 
 import UIKit
 import SkyFloatingLabelTextField
-import GoogleSignIn
+//import GoogleSignIn
 import CountryPickerView
 
 class LoginSignupViewController: BaseViewController<LoginSignupViewModel> {
@@ -17,7 +17,7 @@ class LoginSignupViewController: BaseViewController<LoginSignupViewModel> {
         case Signup
     }
 
-    @IBOutlet weak var _googleSignInButton: GIDSignInButton!
+    @IBOutlet weak var _googleSignInButton: UIButton!//GIDSignInButton!
     @IBOutlet weak var _loginSignupButton: UIButton!
     @IBOutlet weak var _continueButton: UIButton!
     @IBOutlet weak var _nameTextField: SkyFloatingLabelTextField!
@@ -43,7 +43,7 @@ class LoginSignupViewController: BaseViewController<LoginSignupViewModel> {
         countryPicker.delegate = self
         countryPicker.dataSource = self
         
-        GIDSignIn.sharedInstance().presentingViewController = self
+        //GIDSignIn.sharedInstance().presentingViewController = self
         
     }
     

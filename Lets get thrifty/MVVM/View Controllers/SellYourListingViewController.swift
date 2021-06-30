@@ -23,6 +23,12 @@ class SellYourListingViewController: BaseViewController<SellYourListingViewModel
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self._tableView.reloadData()
+        self.enableHero()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        self.disableHero()
     }
     
     private func _bindViewModel() {
@@ -62,8 +68,8 @@ extension SellYourListingViewController : UITableViewDataSource, UITableViewDele
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SellYourListingTableViewCell", for: indexPath) as! SellYourListingTableViewCell
         cell.apply(listing: viewModel.listings.value[indexPath.row])
-        return cell
         
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -75,11 +81,25 @@ extension SellYourListingViewController : UITableViewDataSource, UITableViewDele
         header.userDidTap = _headerTapped
         return header
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        guard let cell = tableView.cellForRow(at: indexPath) as? SellYourListingTableViewCell else { return }
+        let vc = ListingViewController.Builder.build(model: ListingViewModel(webserviceManager: self.viewModel.webserviceManager,
+                                                                             listing: self.viewModel.listings.value[indexPath.row],
+                                                                             initialCollectionViewIndex:cell.currentSelectedIndex))
+        vc.hidesBottomBarWhenPushed = true
+//        (cell._photosCollectionView.cellForItem(at: IndexPath(row: cell.currentSelectedIndex, section: 1) ) as!  ImageCollectionViewCell)._imageView.heroID = "x"
+        //vc._collectionView.heroID = "x"
+        cell.heroID = "x"
+        
+        showHero(vc)
+    }
 
 }
 
 extension SellYourListingViewController : ListingDelegate {
     func didAddNewListing(listing: Listing) {
-        //TODO
+        self.viewModel.addNewListing(listing: listing)
     }
 }

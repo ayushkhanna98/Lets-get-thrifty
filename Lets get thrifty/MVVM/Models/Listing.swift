@@ -19,11 +19,19 @@ struct Listing: Codable {
     var photos: [String]?
     var status: Int? = nil
     let location: Location?
+    
+    var listingPrice: String {
+        "AED" + "\(self.price ?? 0)"
+    }
+    
 
 }
 
 struct Location: Codable {
     let street: String?
     let city: String?
+    let state: String?
+    let country: String?
     let formattedAddress: String?
+    let coordinates: [Double]?
 }

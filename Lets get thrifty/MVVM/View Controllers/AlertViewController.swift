@@ -51,6 +51,7 @@ class AlertViewController: UIViewController {
     }
     
     @IBAction func _dismissTapped(_ sender: Any) {
+        dismisCallback?()
         self.dismiss(animated: true)
     }
     

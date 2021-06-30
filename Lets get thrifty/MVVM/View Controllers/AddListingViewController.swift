@@ -35,7 +35,8 @@ class AddListingViewController: BaseViewController<AddListingViewModel> {
                     listingDetailsModel: ListingDetailsModel(
                         price: price, name: _nameTextField.text,
                         description: _descriptionTextField.text,
-                        condition: Int(_conditionSlider.value) * 10, images: images
+                        condition: Int(_conditionSlider.value * 10) ,
+                        images: images
                     )))
             self.navigationController?.pushViewController(vc, animated: true)
         }
